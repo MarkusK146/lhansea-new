@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <!-- Header Section -->
     <header class="header">
         <nav class="main-nav">
             <div class="logo">
-                <a href="/">Your Logo</a>
+                <a href="index.html">
+                    <img src="images/logo/Hansea-logo.png" alt="Hansea logo" class="logo-img">
+                </a>
             </div>
             <div class="nav-links">
-                <a href="#home">Home</a>
+                <a href="#start" class="active">Start</a>
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
             </div>
             <div class="mobile-menu-btn">
                 <span></span>
@@ -29,52 +33,100 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="start">
         <div class="hero-content">
-            <h1>Welcome to Your Website</h1>
-            <p>Your compelling tagline goes here</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Landsmannschaft Hansea Nürnberg im CC</h1>
+            <div class="animated-text">
+                <span class="text-line">Studentenverbindung seit 1919</span>
+                <span class="text-line">...im Herzen Nürnbergs</span>
+                <span class="text-line">über 150 Mitglieder</span>
+            </div>
+            <a href="#about" class="cta-button">Mehr erfahren</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Your about content goes here...</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/about-placeholder.jpg" alt="About Us">
+    <!-- AV Section -->
+    <section class="av-section">
+        <div class="av-section-color-overlay-wrap">
+            <div class="av-section-color-overlay"></div>
+            <div class="container av-section-cont-open">
+                <div class="av-content-full">
+                    <div class="av-rotator-container">
+                        <h2 class="av-rotator-container-inner">Mehr <span class="av-rotator-text typewriter-text"></span> wagen.</h2>
+                    </div>
+                    
+                    <div class="hr hr-custom hr-center hr-icon-yes">
+                        <span class="hr-inner inner-border-av-border-fat"></span>
+                        <span class="av-seperator-icon" aria-hidden="true" data-av_icon=""></span>
+                        <span class="hr-inner inner-border-av-border-fat"></span>
+                    </div>
+                    
+                    <div class="avia-animated-number">
+                        <strong class="heading avia-animated-number-title">
+                            <span class="avia-single-number" data-number="250" data-start_from="0">250</span>
+                        </strong>
+                        <div class="avia-animated-number-content">
+                            <p>neue Freunde finden.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-column-container">
+                        <div class="flex-column">
+                            <article class="iconbox iconbox_top">
+                                <div class="iconbox_content">
+                                    <header class="entry-content-header">
+                                        <div class="iconbox_icon heading-color" aria-hidden="true" data-av_icon=""></div>
+                                        <h3 class="iconbox_content_title">Wer sind wir?</h3>
+                                    </header>
+                                    <div class="iconbox_content_container">
+                                        <p>Die Landsmannschaft Hansea Nürnberg vereint seit ihrer Stiftung im Jahr 1919 Studenten und Alumni der Friedrich-Alexander-Universität Erlangen-Nürnberg. Die Freundschaft, der Austausch sowie die Unterstützung und Förderung untereinander stehen dabei im Mittelpunkt.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <div class="flex-column">
+                            <article class="iconbox iconbox_top">
+                                <div class="iconbox_content">
+                                    <header class="entry-content-header">
+                                        <div class="iconbox_icon heading-color" aria-hidden="true" data-av_icon=""></div>
+                                        <h3 class="iconbox_content_title">Was wollen wir?</h3>
+                                    </header>
+                                    <div class="iconbox_content_container">
+                                        <p>Wir wollen unser Studium nicht nur der fachlichen Ausbildung, sondern auch dem Sammeln von Erfahrungen widmen, die für unser gesamtes akademisches, berufliches und privates Leben hilfreich sein werden.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <div class="avia-testimonial-wrapper">
+                        <div class="avia-testimonial">
+                            <div class="avia-testimonial_inner">
+                                <div class="avia-testimonial-content">
+                                    <div class="avia-testimonial-markup-entry-content">
+                                        <p><em>„Ich bin in Nürnberg aufgewachsen, habe in Erlangen und in München studiert und lebe derzeit in Berlin. Mein Lebenslauf liest sich wie eine Reise durch Deutschland und dennoch ist mir Verwurzelung sehr wichtig. Regelmäßig besuche ich daher das Hanseahaus in Nürnberg und freue mich, meine alten Freunde wiederzusehen und mich mit ihnen an unsere gemeinsame Studentenzeit zu erinnern."</em></p>
+                                    </div>
+                                </div>
+                                <div class="avia-testimonial-meta">
+                                    <div class="avia-testimonial-arrow-wrap">
+                                        <div class="avia-arrow"></div>
+                                    </div>
+                                    <div class="avia-testimonial-meta-mini">
+                                        <strong class="avia-testimonial-name">Max Mustermann</strong>
+                                        <span class="avia-testimonial-subtitle">Seniorpartner bei einer Anwaltskanzlei, Mitglied seit 1990</span>
+                                        <span class="avia-testimonial-subtitle-sep">–</span>
+                                        <a class="aviablank avia-testimonial-link" href="#" target="_blank">example.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-icon"></i>
-                    <h3>Service 1</h3>
-                    <p>Service description goes here...</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-icon"></i>
-                    <h3>Service 2</h3>
-                    <p>Service description goes here...</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-icon"></i>
-                    <h3>Service 3</h3>
-                    <p>Service description goes here...</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -116,10 +168,9 @@
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#start">Start</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -139,5 +190,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/typewriter.js"></script>
 </body>
 </html> 
